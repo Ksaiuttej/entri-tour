@@ -1,308 +1,735 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600&family=Lora:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    <!-- style sheets -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <title>Entri-Tour</title>
-</head>
-<body>
-    <!-- HEADER -->
-    <section id="header">
-    <!-- NAV-BAR -->
-    <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <span class="brand1 ">ENTRI</span>
-            <span class="brand2">TOUR</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#cabins">Our cabins</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#attraction">Attractions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#transportation">Transportation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#contact">Contact us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#contact" id="nav-my">My Account</a>
-              </li>
-              <li>
-                <a href="#contact">
-                  <i class="nav-link fa-regular fa-user fa-lg ms-auto"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+/* Universal */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-      <!-- HERO SECTION -->
-    <div class="hero-div">
-      <div class="hero">
-        <div class="big-heading">
-          <h1><span class="clr">Adventure is Calling "Leave Your </span><span class="orange_clr-1">Work Behind </span><span class="clr-and">and </span><span class="orange_clr-2">Answer It </span><span class="clr-a">!"</span></h1>
-        </div>
-        <div class="big-heading-mob">
-          <h1>Adventure is Calling "Leave Your Work Behind and Answer It !"</h1>
-        </div>
-        <div class="head-desc">
-          <p>Are you feeling burned out from your daily routine and the demands of work? It's time to take a break and answer the call of adventure! Our tourism website is your ultimate guide to escaping the stresses of work and embracing new experiences.</p>
-        </div>
-        <form>
-          <!-- <input type="text" placeholder="Enter your email"> -->
-          <input type="email" class="form-control me-2" placeholder="Enter your email">
-        </form>
-      </div>
-      <div class="hero-img">
-        <img src="https://i.postimg.cc/bJzj8LZn/explore.png" alt="">
-      </div>
-    </div>    
-    </section>
+h2{
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    color: #22223C;
+    
+}
 
-    <!-- Cabins -->
-    <section id="cabins">
-      <h2>Unwind in the Tranquility of Our Rustic Cabins</h2>
-      <hr>
-      <div class="cards-box">
-      <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/1309584/pexels-photo-1309584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3>ARAKU-ANDHRA</h3>
-          <h2>Stay in Our Cozy Tent Cabin</h2>
-          <p class="card-text">If you're looking for a unique and unforgettable safari-style experience, our Tent cabin offers the perfect escape.
-            Enjoy a peaceful night's sleep under the stars, and wake up to the sounds of the wilderness all around you.
-          </p>
-          <i class="fa-sharp fa-solid fa-star"></i>
-          <i class="fa-sharp fa-solid fa-star"></i>
-          <i class="fa-sharp fa-solid fa-star"></i>
-          <i class="fa-sharp fa-solid fa-star"></i>
-          <i class="fa-sharp fa-regular fa-star"></i>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/1131573/pexels-photo-1131573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="...">
-        <div class="card-body">
-            <h3>OOTY-TAMIL NADU</h3>
-            <h2>Stay in Our Private Cottage Cabin</h2>
-            <p class="card-text">If you're looking for a private and peaceful getaway, our Cottage cabin is the perfect retreat. Nestled in the heart of nature, thisaccommodation features a spacious area,
-               fully equipped kitchen, and comfortable bedroom for a relaxing stay. </p>
-          <i class="fa-sharp fa-solid fa-star"></i>
-          <i class="fa-sharp fa-solid fa-star"></i>
-          <i class="fa-sharp fa-solid fa-star"></i>
-          <i class="fa-sharp fa-regular fa-star"></i>
-          <i class="fa-sharp fa-regular fa-star"></i>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h3>GOA-INDIA</h3>
-            <h2>Our Exquisite Villa in Goa</h2>
-            <p class="card-text">Experience the ultimate in luxury living with our exquisite Villa in Goa.
-              Enjoy a dip in the private pool, take a stroll through the lush gardens, or simply relax on the outdoor terrace and soak up the sun.
-            </p>
-            <i class="fa-sharp fa-solid fa-star"></i>
-          <i class="fa-sharp fa-solid fa-star"></i>
-          <i class="fa-sharp fa-solid fa-star"></i>
-          <i class="fa-sharp fa-solid fa-star"></i>
-          <i class="fa-sharp fa-regular fa-star"></i>
-        </div>
-      </div>
-    </div>
-    </section>
- 
-    <!-- Attractions -->
-    <section id="attraction">
-      <h2>Explore the Best Attractions</h2>
-      <hr>
-      <div class="attraction-conatiner">
-      
-      <div class="card mb-3">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="https://images.pexels.com/photos/12968097/pexels-photo-12968097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">FOR THOSE WHO LOVE</h5>
-              <h3 class="card-text">To Explore Hyderabad.</h3>
-              <p class="card-desc">Charminar is a famous monument located in the heart of Hyderabad, India.
-                A visit to Charminar is a must for anyone looking to experience the rich history and culture of Hyderabad.
-              </p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
+hr{
+    border: 2px solid #ee9519;
+    width: 20%;
+    margin-top: 0;
+}
 
-      <div class="card mb-3">
-        <div class="row g-0">
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">FOR THOSE WHO LOVE</h5>
-              <h3 class="card-text">To Chill in Vizag.</h3>
-              <p class="card-desc">Vizag Beach is the perfect place to unwind and enjoy a relaxing day by the sea.
-                Vizag Beach is also home to various activities, such as beach volleyball, surfing, and parasailing.
-              </p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 5 mins ago</small></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <img src="https://media.istockphoto.com/id/1135794465/photo/vizag-city.jpg?s=170667a&w=0&k=20&c=hlPPWbINJt4B_jKPiN8jA_MfZXdDKj6-1xnvKdmC-8w=" class="img-fluid" alt="...">
-          </div>
-        </div>
-      </div>
+.container-fluid{
+    padding : 0.5% 15% 0 15%;
+}
+
+/* HEADER */
+.brand1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: -10px;
+    color: #166527;
+}
+
+.brand2{
+    font-family: 'Poppins', sans-serif;
+    font-weight : 700;
+    display: inline-block;
+    margin-left: 6px;
+    color: #1a3724;
+}
+.fixed-top{
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.fa-user{
+    margin-top: 8px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+    color: #202020;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.nav-link:hover{
+    color: #166527;
+}
+
+#nav-my{
+    visibility: hidden;
+    display: none;
+}
+
+/* HERO */
+.big-heading-mob{
+    visibility: hidden;
+}
+
+.hero{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.9051995798319328) 13%, rgba(20,20,20,0.711922268907563) 40%, rgba(45,49,50,0.9164040616246498) 79%),url("https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.big-heading{
+    color: whitesmoke;
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+    font-size: small;
+    line-height: 2;
+}
+
+.big-heading > *{
+    width: 50%;
+    position: absolute;
+    top: 220px;
+    left: 100px;
+}
+
+h1{
+    font-size: 2.2rem;
+}
+
+.orange_clr-1,.orange_clr-2{
+    color: #F5B963;
+}
+
+.head-desc{
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    width: 45%;
+    font-size: small;
+    position: absolute;
+    top: 320px;
+    left: 100px;
+    line-height: 2;
+}
+
+#header input[type=email]{
+    position: absolute;
+    width: 35%;
+    height: 5%;
+    top: 420px;
+    left: 100px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
+
+.hero-img img{
+    width: 450px;
+    position: absolute;
+    bottom: 75px;
+    left: 800px;
+    opacity: 80%;
+}
+
+.hero-img{
+    position: relative;
+}
+
+/* Cabins */
+#cabins{
+    padding: 2rem 0 3px 5rem;
+}
+
+#cabins .card{
+    background-color: #2B3030;
+    border-radius: 3px;
+    border: none;
+    margin-top: 1.5rem;
+
+}
+
+.card h3{
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+    color: #D7FFF1
+}
+
+.card h2{
+    font-family: 'Bitter', serif;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    font-size: small;
+    color: white;
+}
+
+.card .card-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-size: small;
+    color: #d4dad7;
+}
+
+.cards-box{
+    padding: 0 25px 1.5px 0;
+    display: flex;
+    justify-content: center;
+    gap:6%;
+}
+
+.fa-star{
+    color: #D7FFF1;
+}
+
+/* Attractions */
+
+#attraction{
+    padding: 3rem 0 1.5px 5rem;
+}
+
+.attraction-conatiner{
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    margin-top: 2.5rem;
+}
+
+#attraction .card{
+    background-color: #D7FFF1;
+     border: 1 solid grey; 
+     max-width: 35%;
+}
+
+#attraction .card-title{
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+    color: #596363;
+    height: max-content;
+}
+
+#attraction .card-text{
+    font-family: 'Bitter', serif;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    font-size: small;
+    color: black;
+}
+
+#attraction .card-desc{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-size: small;
+    color: #424745;
+}
+
+/* inspiration */
+
+.c1{
+    background: rgb(45,49,50);
+    background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url("https://i.postimg.cc/SRCLrLGZ/c1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 2.5rem;;
+    position: relative;
+}
+.c2{
+    background: rgb(45,49,50);
+    background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url("https://i.postimg.cc/9QJdJQGj/c2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 2.5rem;;
+    position: relative;
+}
+.c3{
+    background: rgb(45,49,50);
+    background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url("https://i.postimg.cc/kG3KB6dW/c3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 2.5rem;;
+    position: relative;
+}
+
+
+.inspiration-container h1{
+    color: whitesmoke;
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+    font-size: xx-large;
+    line-height: 2;
+    position: absolute;
+    top:100px;
+    left:300px;
+}
+
+.inspiration-container .onep{
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    color: #d4dad7;
+    position: absolute;
+    width: 50%;
+    top:170px;
+    left:300px;
+}
+
+.inspiration-container .twop{
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    color: #d4dad7;
+    position: absolute;
+    width: 50%;
+    top:370px;
+    left:300px;
+}
+
+.inspiration-container .fstar-div{
+    position: absolute;
+    top:470px;
+    left:300px;
+}
+
+.inspiration-container .fa-star{
+    color:#16af37;
+}
+
+/* Transportation */
+
+#transportation{
+    padding-top: 3rem;
+}
+
+#transportation h2{
+    padding-left: 5rem;
+}
+
+#transportation hr{
+    margin-left: 5rem;
+}
+
+.trans-container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 3rem;
+    /* background-color: #22223C; */
+}
+
+.trans-desc{
+    width: 15%;
+    display: inline-block;
+    /* margin-left: -50px; */
+}
+
+.trans-box{
+    width: 22%;
      
-    </div>
-    </section>
+}
+
+.trans-desc p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-size: medium;
+    width: auto;
+    color: #D7FFF1;
+    text-align: left;
+}
+
+#transportation .btn{
+    margin-top: 15px;
+    width: 75%;
+    color: black;
+}
+
+
+#transportation h3{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    font-size: large;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bgclr{
+    padding-top: 15px;
+    margin: 0;
+    height: max-content;
+    width: 100%;
+    background-color: #2B3030;
+}
+
+/* Contact */
+.contact-hr{
+    border: 1px solid #D7FFF1;
+    width: 80%;
+    margin-left: 8.5rem;
+} 
+
+.contact-hr2{
+    border: 1px solid #D7FFF1;
+    width: 80%;
+    margin-left: 8.5rem;
+    margin-bottom: 0;
+} 
+
+#contact{
+    background-color: #2B3030;
+    padding-top: 3rem;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    gap:12rem;
+    padding-top: 1rem;
+}
+
+#contact h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    color: #D7FFF1;
+}
+
+#contact p{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    font-size: small;
+    color: whitesmoke;
+    width: auto;
+}
+
+.conatct-desc{
+    width: 400px;
+}
+
+#contact input[type=email]{
+    width: 15rem;
+    height: 5%;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    margin-bottom: 5px;
+}
+
+#contact .btn-warning{
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;
+    color: #1c1d1c9c;
+    margin-top: 10px;
+    width: 15rem;
+}
+
+#contact .btn-warning:hover {
+    transform: scale(1.2);
+  }
+
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2B3030;;
+    color: #fff;
+    padding: 20px;
+  }
+
+  footer a{
+    text-decoration: none;
+  }
+
+  
+  .footer-left img {
+    height: 50px;
+  }
+  
+  .footer-middle {
+    font-size: 14px;
+  }
+  
+  .footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 30px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+
+.brand3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: -10px;
+    color: whitesmoke;
+}
+
+.brand4{
+    font-family: 'Poppins', sans-serif;
+    font-weight : 700;
+    display: inline-block;
+    margin-left: 6px;
+    color: whitesmoke;
+}
 
 
 
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="inspiration-container c1">
-            <h1>Hear From Our Happy Customers</h1>
-            <p class="onep">Looking for an authentic travel experience? Look no further than our customers' reviews!
-               We're proud to say that our customers consistently rate us highly for our exceptional service, attention to detail, and unforgettable experiences. But don't just take our word for it - read on to hear directly from our satisfied customers. From thrilling adventures to peaceful getaways, our customers share their firsthand experiences
-               and provide valuable insights to help you plan your next trip.</p>
-            <p class="twop"> So why not see for yourself why our customers keep coming back for more? Browse our customer reviews and join the growing community of happy travelers today.</p>
-             <div class="fstar-div">
-              <i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-             </div> 
-            </div>
-        </div>
-        <div class="carousel-item">
-          <div class="inspiration-container c2">
-            <h1>Real Stories from Real Travelers</h1>
-            <p class="onep">Our customers are the heart and soul of our business, and we're always thrilled to hear about their incredible travel experiences. In this section, you'll find a collection of reviews and stories from real travelers who have explored the world with us. From off-the-beaten-path adventures to luxurious getaways, our customers share their 
-              candid thoughts and opinions, providing valuable insights and inspiration for your own travels.</p>
-            <p class="twop"> So if you're looking for honest and authentic reviews, look no further than our community of passionate travelers.</p>
-             <div class="fstar-div">
-              <i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-             </div> 
-            </div>
-        </div>
-        <div class="carousel-item">
-          <div class="inspiration-container c3">
-            <h1>The Proof is in the Pudding</h1>
-            <p class="onep">we're committed to delivering exceptional travel experiences that exceed our customers' expectations. But don't just take our word for it - check out our customer reviews and see for yourself! In this section, you'll find a range of reviews and feedback from our happy customers. From the quality of our service to the beauty of our destinations
-              , our customers' words speak volumes about the quality of our offerings.</p>
-            <p class="twop"> So why not hear directly from those who have experienced our tours and trips firsthand? Browse our customer reviews and join the thousands of satisfied travelers who have explored the world with us.</p>
-             <div class="fstar-div">
-              <i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-             </div> 
-            </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+@media (max-width: 992px){
+    
+    
 
-    <!-- Transportation -->
-    <section id="transportation">
-      <h2>Getting Around Made Easy</h2>
-      <hr>
-      <div class="bgclr">
-      <div class="trans-container">
-        
-        <div class="bus trans-box">
-          <img src="https://i.postimg.cc/XqjNH4fT/T1.jpg" alt="">
-          <h3>Travel by Bus</h3>
-        </div>
-        <div class="plane trans-box">
-          <img src="https://i.postimg.cc/wMwqnZF3/t2.jpg" alt="">
-          <h3>Travel by Flight</h3>
-        </div>
-        <div class="train trans-box">
-          <img src="https://i.postimg.cc/Y2RC4Lkk/t3.jpg" alt="">
-          <h3>Travel by Train</h3>
-        </div>
-        <div class="trans-desc">
-          <p>Discover hassle-free travel with our reliable transportation options.Navigate the city like a local with our helpful travel tips and advice.</p>
-          <button type="button" class="btn btn-light">Explore</button>
-        </div>
-      </div>
-    </div>
-    </section>
-<!-- contact us -->
-  <section id="contact">
-    <hr class="contact-hr">
-    <div class="contact-container">
-    <div class="conatct-desc">
-      <h3>Sign up to our Entri-Tour</h3>
-      <p>Stay up-to-date on the latest news and travel tips by subscribing to our newsletter. Be the first to know about new destinations, exclusive offers, and
-       upcoming events!</p>
-    </div>
-    <div class="contact-mail">
-      <form>
-        <input type="email" class="form-control me-2" placeholder="Enter your email">
-        <button type="button" class="btn btn-warning">Join the mailing list</button>
-      </form>
-    </div>
-  </div>
-  <hr class="contact-hr2">
-  </section>
+    /* Header */
+    .navbar-nav{
+        margin-right:0;
+    }
+
+    .navbar-brand{
+        padding: 0 ;
+    }
+
+    li i{
+        visibility: hidden;
+    }
+
+    #nav-my{
+        visibility: visible;
+        display: block;
+    }
+
+    .big-heading-mob{
+        visibility: inherit;
+        color: whitesmoke;
+        font-family: 'Libre Baskerville', serif;
+        text-align: center;
+        padding: 11rem 3rem;
+    }
+
+    .big-heading-mob h1{
+        font-size: 1.5rem;
+    }
+
+    .big-heading{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .head-desc{
+        top:18rem;
+        padding: auto 1rem;
+        width: 60%;
+        color: #ffcd88;
+        text-align: center;
+        margin-bottom: 20rem;
+    }
+
+    #header input[type=email]{
+        position: absolute;
+        width: 35%;
+        height: 5%;
+        top: 29.5rem;
+        left: 10rem;
+        text-align: center;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-size: small;
+    }
+    .hero-img{
+        visibility: hidden;
+        display: none;
+        width: 0;
+    }
+
+    .hero-img img{
+        visibility: hidden;
+        display: none;
+        width: 0;
+    }
 
 
-    <footer>
-      <div class="footer-left">
-        <a  href="#">
-          <span  class="brand3">ENTRI</span>
-          <span class="brand4">TOUR</span>
-        </a>
-      </div>
-      <div class="footer-middle">
-        &copy; 2023 Company Name. All rights reserved.
-      </div>
-      <div class="footer-right">
-        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-      </div>
-    </footer>
+    /* cabin */
+
+    .cards-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: max-content;
+    }
+    
+    /* Attraction */
+
+    .attraction-conatiner{
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        gap: 2rem;
+    }
+
+    .attraction-conatiner .card{
+        max-width: 80% !important;
+        margin-left: -6rem;
+    }
+
+    .attraction-conatiner .card-desc{
+        width: 15rem;
+    }
+    
+    /* Inspiration */
+
+    .c1{
+        background: rgb(45,49,50);
+        background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url("https://images.pexels.com/photos/2108845/pexels-photo-2108845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin-top: 2.5rem;;
+        position: relative;
+    }
+    .c2{
+        background: rgb(45,49,50);
+        background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url("https://images.pexels.com/photos/906531/pexels-photo-906531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin-top: 2.5rem;;
+        position: relative;
+    }
+    .c3{
+        background: rgb(45,49,50);
+        background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url("https://images.pexels.com/photos/756024/pexels-photo-756024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin-top: 2.5rem;;
+        position: relative;
+    }
+    
+    .inspiration-container h1{
+        color: whitesmoke;
+        font-family: 'Libre Baskerville', serif;
+        font-size: x-large;
+        position: absolute;
+        top: 80px;
+        left:30px;
+    }
+    
+    .inspiration-container .onep{
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+        text-align: left;
+        color: #d4dad7;
+        position: absolute;
+        width: 80%;
+        top:150px;
+        left:30px;
+    }
+    
+    .inspiration-container .twop{
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+        text-align: left;
+        color: #d4dad7;
+        position: absolute;
+        width: 80%;
+        top:400px;
+        left:30px;
+    }
+    
+    .inspiration-container .fstar-div{
+        position: absolute;
+        top:530px;
+        left:30px;
+    }
+
+    .inspiration-container{
+        text-align: center;
+    }
 
     
-</body>
-</html>
+    /* transportation */
+    .trans-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trans-desc{
+        width: 100%;
+    }
+
+    .trans-desc p{
+        text-align: center;
+        width: 100%;
+        padding: 0 2.3rem;
+    }
+
+    .trans-desc button{
+        text-align: center;
+        margin-left: 4.1rem;
+    }
+
+    .trans-box{
+        align-self: center;
+        width: 100%;
+        text-align: center;
+    }
+ 
+    /* contact */
+    .contact-hr{
+        margin: 0;
+        margin-left: 3rem;
+    }
+
+    .contact-hr2{
+        margin: 0;
+        margin-left: 3rem;
+    }
+     
+    .contact-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        gap:2rem;
+    
+    }
+
+    .conatct-desc{
+        text-align: center;
+        height: 5rem;
+    }
+
+    .contact-mail{
+        margin-bottom: 1rem;
+    }
+
+}
