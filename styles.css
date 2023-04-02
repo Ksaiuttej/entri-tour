@@ -65,6 +65,9 @@ hr{
 }
 
 /* HERO */
+.big-heading-mob{
+    visibility: hidden;
+}
 
 .hero{
     background: rgb(0,0,0);
@@ -94,7 +97,7 @@ h1{
     font-size: 2.2rem;
 }
 
-#orange_clr{
+.orange_clr-1,.orange_clr-2{
     color: #F5B963;
 }
 
@@ -194,6 +197,7 @@ h1{
 #attraction .card{
     background-color: #D7FFF1;
      border: 1 solid grey; 
+     max-width: 35%;
 }
 
 #attraction .card-title{
@@ -222,7 +226,7 @@ h1{
 
 .c1{
     background: rgb(45,49,50);
-    background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url(c1.jpg);
+    background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url("https://i.postimg.cc/SRCLrLGZ/c1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -232,7 +236,7 @@ h1{
 }
 .c2{
     background: rgb(45,49,50);
-    background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url(c2.jpg);
+    background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url("https://i.postimg.cc/9QJdJQGj/c2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -242,7 +246,7 @@ h1{
 }
 .c3{
     background: rgb(45,49,50);
-    background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url(c3.jpg);
+    background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url("https://i.postimg.cc/kG3KB6dW/c3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -252,46 +256,44 @@ h1{
 }
 
 
-#inspiration-container h1{
+.inspiration-container h1{
     color: whitesmoke;
     font-family: 'Libre Baskerville', serif;
     position: relative;
     font-size: xx-large;
     line-height: 2;
     position: absolute;
-    top:180px;
-    left:50px;
+    top:100px;
+    left:300px;
 }
 
-#inspiration-container .onep{
+.inspiration-container .onep{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-size: small;
+    font-size: large;
     color: #d4dad7;
     position: absolute;
     width: 50%;
-    top:250px;
-    left:50px;
+    top:170px;
+    left:300px;
 }
 
-#inspiration-container .twop{
+.inspiration-container .twop{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-size: small;
+    font-size: large;
     color: #d4dad7;
     position: absolute;
     width: 50%;
-    top:350px;
-    left:50px;
+    top:370px;
+    left:300px;
 }
 
-#inspiration-container .fstar-div{
+.inspiration-container .fstar-div{
     position: absolute;
-    top:400px;
-    left:50px;
+    top:470px;
+    left:300px;
 }
 
-#inspiration-container .fa-star{
+.inspiration-container .fa-star{
     color:#16af37;
 }
 
@@ -312,14 +314,20 @@ h1{
 .trans-container{
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 3rem;
     /* background-color: #22223C; */
 }
 
 .trans-desc{
-    width: 200px;
-    margin-left: -50px;
+    width: 15%;
+    display: inline-block;
+    /* margin-left: -50px; */
+}
+
+.trans-box{
+    width: 22%;
+     
 }
 
 .trans-desc p{
@@ -510,6 +518,8 @@ footer {
 
 
 @media (max-width: 992px){
+    
+    
 
     /* Header */
     .navbar-nav{
@@ -529,11 +539,217 @@ footer {
         display: block;
     }
 
-    /* Hero */
-    .big-heading span{
+    .big-heading-mob{
+        visibility: inherit;
+        color: whitesmoke;
+        font-family: 'Libre Baskerville', serif;
         text-align: center;
-        width: 100%;
-        font-size: 1rem;
+        padding: 11rem 3rem;
+    }
+
+    .big-heading-mob h1{
+        font-size: 1.5rem;
+    }
+
+    .big-heading{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .head-desc{
+        top:18rem;
+        padding: auto 1rem;
+        width: 60%;
+        color: #ffcd88;
+        text-align: center;
+        margin-bottom: 20rem;
+    }
+
+    #header input[type=email]{
+        position: absolute;
+        width: 35%;
+        height: 5%;
+        top: 29.5rem;
+        left: 10rem;
+        text-align: center;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-size: small;
+    }
+    .hero-img{
+        visibility: hidden;
+        display: none;
+        width: 0;
+    }
+
+    .hero-img img{
+        visibility: hidden;
+        display: none;
+        width: 0;
+    }
+
+
+    /* cabin */
+
+    .cards-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: max-content;
     }
     
+    /* Attraction */
+
+    .attraction-conatiner{
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        gap: 2rem;
+    }
+
+    .attraction-conatiner .card{
+        max-width: 80% !important;
+        margin-left: -6rem;
+    }
+
+    .attraction-conatiner .card-desc{
+        width: 15rem;
+    }
+    
+    /* Inspiration */
+
+    .c1{
+        background: rgb(45,49,50);
+        background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url("https://images.pexels.com/photos/2108845/pexels-photo-2108845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin-top: 2.5rem;;
+        position: relative;
+    }
+    .c2{
+        background: rgb(45,49,50);
+        background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url("https://images.pexels.com/photos/906531/pexels-photo-906531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin-top: 2.5rem;;
+        position: relative;
+    }
+    .c3{
+        background: rgb(45,49,50);
+        background: linear-gradient(90deg, rgba(45,49,50,1) 0%, rgba(45,49,50,0.76234243697479) 0%),url("https://images.pexels.com/photos/756024/pexels-photo-756024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin-top: 2.5rem;;
+        position: relative;
+    }
+    
+    .inspiration-container h1{
+        color: whitesmoke;
+        font-family: 'Libre Baskerville', serif;
+        font-size: x-large;
+        position: absolute;
+        top: 80px;
+        left:30px;
+    }
+    
+    .inspiration-container .onep{
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+        text-align: left;
+        color: #d4dad7;
+        position: absolute;
+        width: 80%;
+        top:150px;
+        left:30px;
+    }
+    
+    .inspiration-container .twop{
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+        text-align: left;
+        color: #d4dad7;
+        position: absolute;
+        width: 80%;
+        top:400px;
+        left:30px;
+    }
+    
+    .inspiration-container .fstar-div{
+        position: absolute;
+        top:530px;
+        left:30px;
+    }
+
+    .inspiration-container{
+        text-align: center;
+    }
+
+    
+    /* transportation */
+    .trans-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trans-desc{
+        width: 100%;
+    }
+
+    .trans-desc p{
+        text-align: center;
+        width: 100%;
+        padding: 0 2.3rem;
+    }
+
+    .trans-desc button{
+        text-align: center;
+        margin-left: 4.1rem;
+    }
+
+    .trans-box{
+        align-self: center;
+        width: 100%;
+        text-align: center;
+    }
+ 
+    /* contact */
+    .contact-hr{
+        margin: 0;
+        margin-left: 3rem;
+    }
+
+    .contact-hr2{
+        margin: 0;
+        margin-left: 3rem;
+    }
+     
+    .contact-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        gap:2rem;
+    
+    }
+
+    .conatct-desc{
+        text-align: center;
+        height: 5rem;
+    }
+
+    .contact-mail{
+        margin-bottom: 1rem;
+    }
+
 }
