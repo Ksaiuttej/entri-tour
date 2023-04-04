@@ -6,10 +6,12 @@
 
 .sec-title{
     padding: 2rem 0 3px 5rem;
+    margin-bottom: 0;
 }
 
  .sec-hr{
     margin-left: 5rem;
+    width: 20%;
 }
 
 
@@ -25,7 +27,6 @@ h1{
 
 hr{
     border: 2px solid #ee9519;
-    width: 20%;
     margin-top: 0;
 }
 
@@ -140,6 +141,9 @@ hr{
 
  /* Cabins */
 
+ #cabins .sec-hr{
+    width: 13%;
+ }
  
 .card .card-text{
     font-family: 'Open Sans', sans-serif;
