@@ -11,7 +11,7 @@
 
  .sec-hr{
     margin-left: 5rem;
-    width: 20%;
+    width: 50%;
 }
 
 
@@ -140,10 +140,6 @@ hr{
  }
 
  /* Cabins */
-
- #cabins .sec-hr{
-    width: 13%;
- }
  
 .card .card-text{
     font-family: 'Open Sans', sans-serif;
